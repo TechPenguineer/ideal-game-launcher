@@ -16,5 +16,13 @@ namespace igl
         {
             InitializeComponent();
         }
+
+        private void load(object sender, EventArgs e)
+        {
+            string version = System.Windows.Forms.Application.ProductVersion;
+
+            versionLabel.Text = $"Version {version}";
+           
+        }
     }
 }

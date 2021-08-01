@@ -32,7 +32,7 @@ namespace igl
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(igl));
             this.controllPanel = new System.Windows.Forms.Panel();
             this.play_btn = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.versionLabel = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.controllPanel.SuspendLayout();
             this.SuspendLayout();
@@ -42,7 +42,7 @@ namespace igl
             this.controllPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.controllPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(66)))), ((int)(((byte)(66)))));
             this.controllPanel.Controls.Add(this.button1);
-            this.controllPanel.Controls.Add(this.label1);
+            this.controllPanel.Controls.Add(this.versionLabel);
             this.controllPanel.Controls.Add(this.play_btn);
             this.controllPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.controllPanel.Location = new System.Drawing.Point(0, 347);
@@ -67,20 +67,20 @@ namespace igl
             this.play_btn.Text = "#BUTTON STATUS";
             this.play_btn.UseVisualStyleBackColor = false;
             // 
-            // label1
+            // versionLabel
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoEllipsis = true;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
-            this.label1.Location = new System.Drawing.Point(746, 25);
-            this.label1.Name = "label1";
-            this.label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label1.Size = new System.Drawing.Size(120, 17);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "#APP VERSION";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.versionLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.versionLabel.AutoEllipsis = true;
+            this.versionLabel.AutoSize = true;
+            this.versionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.versionLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
+            this.versionLabel.Location = new System.Drawing.Point(746, 25);
+            this.versionLabel.Name = "versionLabel";
+            this.versionLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.versionLabel.Size = new System.Drawing.Size(120, 17);
+            this.versionLabel.TabIndex = 2;
+            this.versionLabel.Text = "#APP VERSION";
+            this.versionLabel.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             // 
             // button1
             // 
@@ -112,6 +112,7 @@ namespace igl
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inital Game Launcher";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.load);
             this.controllPanel.ResumeLayout(false);
             this.controllPanel.PerformLayout();
             this.ResumeLayout(false);
@@ -122,7 +123,7 @@ namespace igl
 
         private System.Windows.Forms.Panel controllPanel;
         private System.Windows.Forms.Button play_btn;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label versionLabel;
         private System.Windows.Forms.Button button1;
     }
 }
