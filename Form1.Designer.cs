@@ -31,17 +31,72 @@ namespace igl
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(igl));
             this.controllPanel = new System.Windows.Forms.Panel();
+            this.play_btn = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.controllPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // controllPanel
             // 
             this.controllPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.controllPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(66)))), ((int)(((byte)(66)))));
+            this.controllPanel.Controls.Add(this.button1);
+            this.controllPanel.Controls.Add(this.label1);
+            this.controllPanel.Controls.Add(this.play_btn);
             this.controllPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.controllPanel.Location = new System.Drawing.Point(0, 347);
             this.controllPanel.Name = "controllPanel";
             this.controllPanel.Size = new System.Drawing.Size(900, 103);
             this.controllPanel.TabIndex = 0;
+            // 
+            // play_btn
+            // 
+            this.play_btn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.play_btn.AutoEllipsis = true;
+            this.play_btn.AutoSize = true;
+            this.play_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(171)))), ((int)(((byte)(57)))));
+            this.play_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.play_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.play_btn.Font = new System.Drawing.Font("Microsoft YaHei UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.play_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
+            this.play_btn.Location = new System.Drawing.Point(12, 25);
+            this.play_btn.Name = "play_btn";
+            this.play_btn.Size = new System.Drawing.Size(292, 53);
+            this.play_btn.TabIndex = 1;
+            this.play_btn.Text = "#BUTTON STATUS";
+            this.play_btn.UseVisualStyleBackColor = false;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.AutoEllipsis = true;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
+            this.label1.Location = new System.Drawing.Point(746, 25);
+            this.label1.Name = "label1";
+            this.label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label1.Size = new System.Drawing.Size(120, 17);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "#APP VERSION";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.BottomRight;
+            // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.AutoSize = true;
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(149)))), ((int)(((byte)(196)))));
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft YaHei UI", 7F, System.Drawing.FontStyle.Bold);
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
+            this.button1.Location = new System.Drawing.Point(740, 49);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(139, 29);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "Settings";
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // igl
             // 
@@ -57,6 +112,8 @@ namespace igl
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inital Game Launcher";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.controllPanel.ResumeLayout(false);
+            this.controllPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -64,6 +121,9 @@ namespace igl
         #endregion
 
         private System.Windows.Forms.Panel controllPanel;
+        private System.Windows.Forms.Button play_btn;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button1;
     }
 }
 
