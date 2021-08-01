@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace igl
 {
-    public partial class Form1 : Form
+    public partial class igl : Form
     {
-        public Form1()
+        public igl()
         {
             InitializeComponent();
         }
